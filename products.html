@@ -34,30 +34,41 @@
   <!-- Filter Buttons -->
   <section class="category-filters">
     <h2>All Products</h2>
-    <div class="filters">
-      <button onclick="filterProducts('all')">All</button>
-      <button onclick="filterProducts('electronics')">Electronics</button>
-      <button onclick="filterProducts('clothing')">Clothing</button>
-    </div>
+    <div class="filter-buttons">
+  <button class="filter-btn active" data-category="all">All</button>
+  <button class="filter-btn" data-category="chair">Chairs</button>
+  <button class="filter-btn" data-category="babychair">Baby Chairs</button>
+  <button class="filter-btn" data-category="stool">Stools</button>
+  <button class="filter-btn" data-category="table">Tables</button>
+  <button class="filter-btn" data-category="aluminiumsection">Aluminium Sections</button>
+  <button class="filter-btn" data-category="aluminiumaccessory">Aluminium Accessories</button>
+</div>
+
   </section>
 
   <!-- Product Grid -->
   <section class="featured-products">
     <div class="product-grid" id="product-grid">
-      <div class="product-card electronics">
-        <img src="assets/images/product1.jpg" alt="Smartphone X">
-        <h3>Smartphone X</h3>
-        <p>High-performance smartphone.</p>
-        <span>$499</span>
-        <a href="product1.html" class="btn">View Details</a>
+      <div class="product-card" data-category="chair">
+        <img src="assets/images/product1.jpg" alt="Chair image">
+        <h3>Milano</h3>
+        <p>High-performance Chair</p>
+        <span>₹750</span>
+        <a href="category/Chairs/Milano.html" class="btn">View Details</a>
       </div>
-      <div class="product-card clothing">
-        <img src="assets/images/product2.jpg" alt="Stylish Jacket">
-        <h3>Stylish Jacket</h3>
-        <p>Warm and trendy winter wear.</p>
-        <span>$89</span>
+      <div class="product-card" data-category="chair">
+        <img src="assets/images/product2.jpg" alt="chair image">
+        <h3>Delhi</h3>
+        <p>sturdy chair</p>
+        <span>₹500</span>
         <a href="product2.html" class="btn">View Details</a>
       </div>
+      <div class="product-card" data-category="babychair">
+        <img src="assets/images/product3.jpg" alt="Baby Chair image">
+        <h3>National</h3>
+        <p>Comfortable Baby Chair</p>
+        <span>₹170</span>
+        <a href="category/BabyChairs/" class="btn">View Details</a>
       <!-- More product cards... -->
     </div>
   </section>
