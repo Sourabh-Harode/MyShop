@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Shop - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1>My Awesome Shop</h1>
+      <p>123 Market Street, Cityville</p>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Shop</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h2>Welcome to My Shop!</h2>
+    <p>Best deals on electronics, clothing, and more.</p>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <!-- Search Bar -->
+<div class="search-container">
+  <input type="text" id="homeSearchInput" placeholder="Search featured products..." />
+</div>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/images/product1.jpg" alt="Product 1">
+        <h3>Smartphone X</h3>
+        <p>Latest smartphone with powerful features.</p>
+        <span>$499</span>
+        <a href="product1.html" class="btn">View Details</a>
+      </div>
+      <div class="product-card">
+        <img src="assets/images/product2.jpg" alt="Product 2">
+        <h3>Stylish Jacket</h3>
+        <p>Trendy winter jacket for all ages.</p>
+        <span>$89</span>
+        <a href="product2.html" class="btn">View Details</a>
+      </div>
+      <!-- Add more products -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p><strong>My Awesome Shop</strong> - 123 Market Street, Cityville</p>
+      <p>Email: info@myshop.com | Phone: (123) 456-7890</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+      <p>&copy; <span id="year"></span> My Awesome Shop</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
