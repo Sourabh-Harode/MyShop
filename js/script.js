@@ -68,9 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // dark mode toggle functionality
+document.addEventListener('DOMContentLoaded', () => {
   const toggleSwitch = document.getElementById('dark-mode-toggle');
+  if (!toggleSwitch) return; // prevent crash if element not found
 
-  // Load saved theme preference
+  // Apply saved preference
   if (localStorage.getItem('dark-mode') === 'enabled') {
     document.body.classList.add('dark-mode');
     toggleSwitch.checked = true;
@@ -85,3 +87,5 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem('dark-mode', 'disabled');
     }
   });
+});
+
